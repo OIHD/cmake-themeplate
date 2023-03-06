@@ -6,7 +6,7 @@ terminal aç ve alttaki kodları yaz
 
 `cd $HOME/cmake-themeplate/ && sh setup.sh`   
 
-vscodeyi aç ve ;
+vscodeyi aç ve ;   
 vscode menubar -> file -> open folder -> themeplate dosyasını aç ve unspecified i seç   
 vscode menubar -> terminal -> run task -> FIRST   
 vscode menubar -> terminal -> run task -> SECOND -> continue without scan the ...   
