@@ -11,9 +11,10 @@ vscode menubar -> file -> open folder -> themeplate dosyasını aç ve unspecifi
 vscode menubar -> terminal -> run task -> FIRST   
 vscode menubar -> terminal -> run task -> SECOND -> continue without scan the ...   
 
-artık F5 ile veya
+Artık F5 ile veya
 vscode menubar-> run -> start debugging
 yaparak debug yapabilirsin
 
+Kurulumdan sonra cmake-themeplate klasörünün ismini istediğin gibi değiştirip , istediğin klasöre taşıyabilirsin. Yollarla ilgili bir sorun oluşursa FIRST ve SECOND taskını tekrardan çalıştır.
 
 SON GÜNCELLEME : 6 Mart 2023
