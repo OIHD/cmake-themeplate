@@ -1,4 +1,4 @@
-bu cmake themeplate dosyasıdır. sonradan tekrar gerekkebileceğinden yazmakla uğraşmamk için buraya yedekledim kullanımı ;
+bu vscode uygulamasında kullanmak için kenara koyduğum cmake themeplate dosyasıdır. sonradan tekrar gerekebileceğinden yazmakla uğraşmamk için buraya yedekledim kullanımı ;
 
 $git clone git@github.com:OIHD/cmake-themeplate.git
 
