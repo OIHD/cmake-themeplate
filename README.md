@@ -2,8 +2,8 @@ Bu themeplate dosyası vscode uygulamasında kullanmak için kenara koyduğum cm
 
 terminal aç   
 
-$git clone https://github.com/OIHD/cmake-themeplate.git
-$cd $HOME/cmake-themeplate/ && sh setup.sh
+$git clone https://github.com/OIHD/cmake-themeplate.git   
+$cd $HOME/cmake-themeplate/ && sh setup.sh   
 
 vscodeyi aç ve menubar -> file -> open folder -> themeplate dosyasını aç ve unspecified i seç   
 vscode menubar-> terminal -> run task -> FIRST   
