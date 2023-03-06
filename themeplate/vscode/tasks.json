@@ -1,0 +1,71 @@
+{
+    "version" : "2.0.0",
+    "tasks" : 
+    [
+        
+        
+        
+        {
+            "label" : "FIRST",
+            "type" : "shell",
+            "command" : "cmake",
+            "options" : 
+            {
+                "cwd" : "${workspaceFolder}/../buildthemeplate"
+            },
+            "args" :
+            [
+                "${workspaceFolder}"
+            ],
+            "group" : 
+            {
+                "kind" : "build",
+                "isDefault" : true
+            },
+            "dependsOn" : 
+            [
+                "buildfolderc"
+            ]
+
+        },
+
+
+
+{
+            "label" : "buildfolderc",
+            "type" : "shell",
+            "command" : "mkdir",
+            "options" : 
+            {
+                "cwd" : "${workspaceFolder}/.."
+            },
+            "args" :
+            [
+                "-p",
+                "buildthemeplate"
+            ]
+},
+
+
+
+{
+            "label" : "SECOND",
+            "type" : "shell",
+            "command" : "make",
+            "options" : 
+            {
+                "cwd" : "${workspaceFolder}/../buildthemeplate"
+            },
+            "args" :
+            [
+                "-l"
+            ]
+}
+
+
+
+
+    ]
+
+
+}
