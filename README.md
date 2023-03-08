@@ -15,7 +15,7 @@ linux için kullanımı ;
 
 ###### vscodeyi aç ve ;   
 ###### vscode menubar -> file -> open folder -> verdiğiniz isimdeki dosyayı /home/kullaniciadiniz/ klasöründe bulun ve açın   
-(verdiginizisim_Proje klasorunun icinde , isminin başında build eki olmayan klasör ) sonrada gelen ekranda unspecified i seç      
+###### (verdiginizisim_Proje klasorunun icinde , isminin başında build eki olmayan klasör ) sonrada gelen ekranda unspecified i seç      
 
 ###### vscode menubar -> terminal -> run task -> FIRST   
 ###### vscode menubar -> terminal -> run task -> SECOND -> continue without scan the ...   
