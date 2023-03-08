@@ -40,3 +40,4 @@ cd $GITHEMEF
 mv $GITHEMEFN $DOSYAISMI
 mv "$GITHEMEFBN" "$GITHEMEFBNN"
 cd $HOME && mv cmake-themeplate $DOSYAISMIANA
+cd $HOME
