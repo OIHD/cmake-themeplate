@@ -1,7 +1,7 @@
 # Otomatik cmake projesi oluşturucu
 #### Bu otomatik hazırlanan themeplate dosyası vscode uygulamasında kullanmak için kenara koyduğum cmake themeplate dosyasıdır. isme göre generate olmaktadır. sonradan tekrar gerekebileceğinden tekrardan bu themeplatei hazırlamakla uğraşmamak için buraya yedekledim . linux için kullanımı ;
 
-# terminal aç ve alttaki kodları yaz   
+## terminal aç ve alttaki kodu yaz   
 
 `git clone https://github.com/OIHD/cmake-themeplate.git&&cd $HOME/cmake-themeplate/ && sh setup.sh   `
 
