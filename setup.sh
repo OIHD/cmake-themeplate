@@ -12,7 +12,7 @@ if [ -d "${GITHEMEFT}/extra" ]; then
 fi
 
 echo "Lutfen projenize bir isim girin: "
-read {DOSYAISMI}
+read DOSYAISMI
 GITHEMEFBNN="${GITHEMEFBND}${DOSYAISMI}"
 DOSYAISMIANA="${DOSYAISMI}_Proje"
 echo "cmake-themeplate klasorunun ismi bu sekilde degistirilecek : ${DOSYAISMI}"
