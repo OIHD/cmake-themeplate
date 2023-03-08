@@ -4,6 +4,7 @@ GITHEMEFT="$HOME/cmake-themeplate/themeplate"
 GITHEMEFN="themeplate"
 GITHEMEFBN="buildthemeplate"
 GITHEMEFBND="build"
+echo "--------------------------------"
 cd $GITHEMEF/ && rm -rf .git
 
 if [ -d "${GITHEMEFT}/extra" ]; then
