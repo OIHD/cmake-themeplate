@@ -6,6 +6,10 @@ GITHEMEFBN="buildthemeplate"
 GITHEMEFBND="build"
 cd $GITHEMEF/ && rm -rf .git
 
+if [ -d "$GITHEMEFT/extra" ]; then
+    rm -rf "$GITHEMEF/extra"   
+fi
+
 echo "Lutfen projenize bir isim girin: "
 read DOSYAISMI
 GITHEMEFBNN="${GITHEMEFBND}${DOSYAISMI}"
@@ -17,9 +21,6 @@ if [ -d "$GITHEMEFT/build" ]; then
 fi
 if [ -d "$GITHEMEF/buildthemeplate" ]; then
     rm -rf "$GITHEMEF/buildthemeplate"   
-fi
-if [ -d "$GITHEMEFT/extra" ]; then
-    rm -rf "$GITHEMEF/extra"   
 fi
 
 cd $GITHEMEF && mkdir buildthemeplate
