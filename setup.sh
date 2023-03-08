@@ -30,11 +30,7 @@ for dosya in $GITHEMEFT/vscode/*; do
         sed -i "s/$GITHEMEFN/$DOSYAISMI/g" "$dosya"
     fi
 done
-for dosya in $GITHEMEF/*; do
-    if [ -f "$dosya" ]; then
-        sed -i "s/$GITHEMEFN/$DOSYAISMI/g" "$dosya"
-    fi
-done
+sed -i 's/$GITHEMEFN/$DOSYAISMI/g' $GITHEMEFT/ornek.txt
 
 if [ -d "$GITHEMEF/themeplate/vscode" ]; then
     cd $GITHEMEF/themeplate && mv vscode/ .vscode
