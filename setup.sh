@@ -27,7 +27,7 @@ fi
 cd $GITHEMEF && mkdir buildthemeplate
 cd $GITHEMEF/themeplate && mkdir build
 
-find $GITHEMEF -type f -exec sed -i 's/$GITHEMEFN/$DOSYAISMI/g' {} +
+find $GITHEMEFT/vscode -type f -exec sed -i 's/$GITHEMEFN/$DOSYAISMI/g' {} +
 
 cd $GITHEMEF
 mv $GITHEMEFN $DOSYAISMI
