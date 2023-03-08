@@ -9,7 +9,7 @@ terminal aç ve alttaki kodları yaz
 Terminalde projenize bir isim vermeniz istenecektir oraya projenizin ismini giriniz , girdiginiz isme göre tüm proje dosyası verdiğiniz isime göre hazırlanacaktır.
 
 vscodeyi aç ve ;   
-vscode menubar -> file -> open folder -> themeplate dosyasını aç ve unspecified i seç   
+vscode menubar -> file -> open folder -> verdiğiniz isimdeki dosyayı /home/kullaniciadiniz/ klasöründe bulun ve açın . gelen ekranda unspecified i seç   
 vscode menubar -> terminal -> run task -> FIRST   
 vscode menubar -> terminal -> run task -> SECOND -> continue without scan the ...   
 
@@ -17,6 +17,6 @@ Artık F5 ile veya
 vscode menubar-> run -> start debugging
 yaparak debug yapabilirsin
 
-Kurulumdan sonra cmake-themeplate klasörünün ismini istediğin gibi değiştirip , istediğin klasöre taşıyabilirsin. Yollarla ilgili bir sorun oluşursa FIRST ve SECOND taskını tekrardan çalıştır.
+Kurulumdan sonra cmake-themeplate klasörünün ismi terminalde vermiş olduğunuz isim olmaktadır , istediğin klasöre taşıyabilirsin. Yollarla ilgili bir sorun oluşursa FIRST ve SECOND taskını tekrardan çalıştır.
 
-SON GÜNCELLEME : 6 Mart 2023
+SON GÜNCELLEME : 8 Mart 2023
