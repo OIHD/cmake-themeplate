@@ -3,9 +3,7 @@
 
 # terminal aç ve alttaki kodları yaz   
 
-`git clone https://github.com/OIHD/cmake-themeplate.git   `
-
-`cd $HOME/cmake-themeplate/ && sh setup.sh`   
+`git clone https://github.com/OIHD/cmake-themeplate.git&&cd $HOME/cmake-themeplate/ && sh setup.sh   `
 
 #### Terminalde projenize bir isim vermeniz istenecektir oraya projenizin ismini giriniz , girdiginiz isme göre tüm proje dosyası verdiğiniz isime göre isim_proje, buildisim , isim klasörleri hazırlanacaktır.
 
