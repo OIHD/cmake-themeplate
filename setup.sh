@@ -24,7 +24,12 @@ fi
 cd $GITHEMEF && mkdir buildthemeplate
 cd $GITHEMEF/themeplate && mkdir build
 
-find $GITHEMEFT/vscode -type f -exec sed -i 's/$GITHEMEFN/$DOSYAISMI/g' {} +
+for dosya in $GITHEMEFT/vscode/*; do
+    if [ -f "$dosya" ]; then
+        sed -i "s/$GITHEMEFN/$DOSYAISMI/g" "$dosya"
+    fi
+done
+
 if [ -d "$GITHEMEF/themeplate/vscode" ]; then
     cd $GITHEMEF/themeplate && mv vscode/ .vscode
 fi
