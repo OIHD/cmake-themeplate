@@ -6,8 +6,8 @@ GITHEMEFBN="buildthemeplate"
 GITHEMEFBND="build"
 cd $GITHEMEF/ && rm -rf .git
 
-if [ -d "$GITHEMEFT/extra" ]; then
-    rm -rf "$GITHEMEF/extra"   
+if [ -d "${GITHEMEFT}/extra" ]; then
+    rm -rf "${GITHEMEF}/extra"   
 fi
 
 echo "Lutfen projenize bir isim girin: "
