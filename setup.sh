@@ -3,11 +3,12 @@ GITHEMEF="$HOME/cmake-themeplate/"
 GITHEMEFT="$HOME/cmake-themeplate/themeplate"
 GITHEMEFN="themeplate"
 GITHEMEFBN="buildthemeplate"
+GITHEMEFBND="build"
 cd $GITHEMEF/ && rm -rf .git
 
 echo "Lutfen dosya ismi girin: "
 read DOSYAISMI
-GITHEMEFBNN="build${DOSYAISMI}"
+GITHEMEFBNN="${GITHEMEFBND}${DOSYAISMI}"
 echo "cmake-themeplate klasorunun ismi bu sekilde degistirilecek : $DOSYAISMI"
 
 if [ -d "$GITHEMEF/themeplate/vscode" ]; then
