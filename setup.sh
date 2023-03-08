@@ -1,7 +1,7 @@
 #!/bin/bash
 GITHEMEF="$HOME/cmake-themeplate/"
 GITHEMEFT="$HOME/cmake-themeplate/themeplate"
-GITHEMEFN="cmake-themeplate"
+GITHEMEFN="themeplate"
 cd $GITHEMEF/ && rm -rf .git
 
 echo "Lutfen dosya ismi girin: "
