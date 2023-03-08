@@ -9,6 +9,7 @@ cd $GITHEMEF/ && rm -rf .git
 echo "Lutfen projenize bir isim girin: "
 read DOSYAISMI
 GITHEMEFBNN="${GITHEMEFBND}${DOSYAISMI}"
+DOSYAISMIANA="${DOSYAISMI}_Proje"
 echo "cmake-themeplate klasorunun ismi bu sekilde degistirilecek : $DOSYAISMI"
 
 if [ -d "$GITHEMEFT/build" ]; then
@@ -37,4 +38,4 @@ fi
 cd $GITHEMEF
 mv $GITHEMEFN $DOSYAISMI
 mv "$GITHEMEFBN" "$GITHEMEFBNN"
-cd $HOME && mv cmake-themeplate $DOSYAISMI
+cd $HOME && mv cmake-themeplate $DOSYAISMIANA
