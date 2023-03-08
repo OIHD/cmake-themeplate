@@ -2,10 +2,12 @@
 GITHEMEF="$HOME/cmake-themeplate/"
 GITHEMEFT="$HOME/cmake-themeplate/themeplate"
 GITHEMEFN="themeplate"
+GITHEMEFBN="buildthemeplate"
 cd $GITHEMEF/ && rm -rf .git
 
 echo "Lutfen dosya ismi girin: "
 read DOSYAISMI
+GITHEMEFBNN="build${DOSYAISMI}"
 echo "cmake-themeplate klasorunun ismi bu sekilde degistirilecek : $DOSYAISMI"
 
 if [ -d "$GITHEMEF/themeplate/vscode" ]; then
@@ -24,10 +26,13 @@ fi
 cd $GITHEMEF && mkdir buildthemeplate
 cd $GITHEMEF/themeplate && mkdir build
 
-for  in $GITHEMEF
-do
-    sed -i "s/$GITHEMEFN/$DOSYAISMI/g" $GITHEMEF
-done
+find $GITHEMEF -type f -exec sed -i 's/$GITHEMEFN/$DOSYAISMI/g' {} +
+
+cd $GITHEMEF
+mv $GITHEMEFN $DOSYAISMI
+
+
+mv "$GITHEMEFBN" "$GITHEMEFBNN"
 
 cd $HOME
 mv cmake-themeplate $DOSYAISMI
