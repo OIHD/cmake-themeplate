@@ -24,7 +24,7 @@ fi
 cd $GITHEMEF && mkdir buildthemeplate
 cd $GITHEMEF/themeplate && mkdir build
 
-for  in $3
+for  in $GITHEMEF
 do
     sed -i "s/$GITHEMEFN/$DOSYAISMI/g" $GITHEMEF
 done
