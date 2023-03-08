@@ -11,13 +11,14 @@
 
 `git clone https://github.com/OIHD/cmake-themeplate.git&&cd $HOME/cmake-themeplate/ && sh setup.sh   `
 
-#### Terminalde projenize bir isim vermeniz istenecektir oraya projenizin ismini giriniz , girdiginiz isme göre tüm proje dosyası verdiğiniz isime göre isim_proje, buildisim , isim klasörleri hazırlanacaktır.
-
+#### Terminalde projenize bir isim vermeniz istenecektir oraya projenizin ismini giriniz , girdiginiz isme göre tüm proje dosyası verdiğiniz isime göre isim_proje, buildisim , isim klasörleri hazırlanacaktır.   
+   
 ###### vscodeyi aç ve ;   
-###### vscode menubar -> file -> open folder -> verdiğiniz isimdeki dosyayı /home/kullaniciadiniz/ klasöründe bulun ve açın   
-###### (verdiginizisim_Proje klasorunun icinde , isminin başında build eki olmayan klasör ) sonrada gelen ekranda unspecified i seç      
 
-###### vscode menubar -> terminal -> run task -> FIRST   
+###### vscode menubar -> file -> open folder -> verdiğiniz isimdeki dosyayı /home/kullaniciadiniz/ klasöründe bulun ve açın
+###### (isim_Proje klasorunun icinde , verdiginiz isimde klasor ) sonrada gelen ekranda unspecified i seç
+   
+###### vscode menubar -> terminal -> run task -> FIRST
 ###### vscode menubar -> terminal -> run task -> SECOND -> continue without scan the ...   
 
 ###### Artık F5 ile veya
