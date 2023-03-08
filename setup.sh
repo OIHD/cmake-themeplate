@@ -11,9 +11,6 @@ read DOSYAISMI
 GITHEMEFBNN="${GITHEMEFBND}${DOSYAISMI}"
 echo "cmake-themeplate klasorunun ismi bu sekilde degistirilecek : $DOSYAISMI"
 
-if [ -d "$GITHEMEF/themeplate/vscode" ]; then
-    cd $GITHEMEF/themeplate && mv vscode/ .vscode
-fi
 if [ -d "$GITHEMEFT/build" ]; then
     rm -rf "$GITHEMEFT/build"   
 fi
@@ -28,12 +25,11 @@ cd $GITHEMEF && mkdir buildthemeplate
 cd $GITHEMEF/themeplate && mkdir build
 
 find $GITHEMEFT/vscode -type f -exec sed -i 's/$GITHEMEFN/$DOSYAISMI/g' {} +
+if [ -d "$GITHEMEF/themeplate/vscode" ]; then
+    cd $GITHEMEF/themeplate && mv vscode/ .vscode
+fi
 
 cd $GITHEMEF
 mv $GITHEMEFN $DOSYAISMI
-
-
 mv "$GITHEMEFBN" "$GITHEMEFBNN"
-
-cd $HOME
-mv cmake-themeplate $DOSYAISMI
+cd $HOME && mv cmake-themeplate $DOSYAISMI
