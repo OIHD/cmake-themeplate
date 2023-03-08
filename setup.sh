@@ -6,7 +6,7 @@ GITHEMEFBN="buildthemeplate"
 GITHEMEFBND="build"
 cd $GITHEMEF/ && rm -rf .git
 
-echo "Lutfen dosya ismi girin: "
+echo "Lutfen projenize bir isim girin: "
 read DOSYAISMI
 GITHEMEFBNN="${GITHEMEFBND}${DOSYAISMI}"
 echo "cmake-themeplate klasorunun ismi bu sekilde degistirilecek : $DOSYAISMI"
