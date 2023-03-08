@@ -1,13 +1,13 @@
-#Otomatik cmake projesi oluşturucu
-####Bu otomatik hazırlanan themeplate dosyası vscode uygulamasında kullanmak için kenara koyduğum cmake themeplate dosyasıdır. isme göre generate olmaktadır. sonradan tekrar gerekebileceğinden tekrardan bu themeplatei hazırlamakla uğraşmamak için buraya yedekledim . linux için kullanımı ;
+# Otomatik cmake projesi oluşturucu
+#### Bu otomatik hazırlanan themeplate dosyası vscode uygulamasında kullanmak için kenara koyduğum cmake themeplate dosyasıdır. isme göre generate olmaktadır. sonradan tekrar gerekebileceğinden tekrardan bu themeplatei hazırlamakla uğraşmamak için buraya yedekledim . linux için kullanımı ;
 
-#terminal aç ve alttaki kodları yaz   
+# terminal aç ve alttaki kodları yaz   
 
 `git clone https://github.com/OIHD/cmake-themeplate.git   `
 
 `cd $HOME/cmake-themeplate/ && sh setup.sh`   
 
-####Terminalde projenize bir isim vermeniz istenecektir oraya projenizin ismini giriniz , girdiginiz isme göre tüm proje dosyası verdiğiniz isime göre isim_proje, buildisim , isim klasörleri hazırlanacaktır.
+#### Terminalde projenize bir isim vermeniz istenecektir oraya projenizin ismini giriniz , girdiginiz isme göre tüm proje dosyası verdiğiniz isime göre isim_proje, buildisim , isim klasörleri hazırlanacaktır.
 
 vscodeyi aç ve ;   
 vscode menubar -> file -> open folder -> verdiğiniz isimdeki dosyayı /home/kullaniciadiniz/ klasöründe bulun ve açın   
@@ -22,4 +22,4 @@ yaparak debug yapabilirsin
 
 Kurulumdan sonra cmake-themeplate klasörünün ismi terminalde vermiş olduğunuz isim olmaktadır , istediğin klasöre taşıyabilirsin. Yollarla ilgili bir sorun oluşursa FIRST ve SECOND taskını tekrardan çalıştır.
 
-#####SON GÜNCELLEME : 8 Mart 2023
+##### SON GÜNCELLEME : 8 Mart 2023
