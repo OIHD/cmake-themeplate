@@ -41,6 +41,6 @@ mv $GITHEMEFN $DOSYAISMI
 mv "$GITHEMEFBN" "$GITHEMEFBNN"
 cd $HOME && mv cmake-themeplate $DOSYAISMIANA
 
-echo "${DOSYAISMI} isimli projenizin konumu ; ${HOME}/${DOSYAISMI}_Proje , vscodeden ${HOME}/${DOSYAISMI}_Proje/${DOSYAISMI} klasorunu open folder sekmesinden acmalisiniz "
 
-cd $GITHEMEF && rm -rf README.md setup.sh
+echo "${DOSYAISMI} isimli projenizin konumu ; ${HOME}/${DOSYAISMI}_Proje , vscodeden ${HOME}/${DOSYAISMI}_Proje/${DOSYAISMI} klasorunu open folder sekmesinden acmalisiniz "
+cd $HOME/${DOSYAISMIANA}/ && rm -rf README.md setup.sh
