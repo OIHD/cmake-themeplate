@@ -11,5 +11,8 @@ fi
 if [ -d "$GITHEMEF/buildthemeplate" ]; then
     rm -rf "$GITHEMEF/buildthemeplate"   
 fi
+if [ -d "$GITHEMEFT/extra" ]; then
+    rm -rf "$GITHEMEF/extra"   
+fi
 cd $GITHEMEF && mkdir buildthemeplate
 cd $GITHEMEF/themeplate && mkdir build
