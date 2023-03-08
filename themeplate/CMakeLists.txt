@@ -1,4 +1,4 @@
-project(themeplate)
+
 
 set(PROJECT_DIR ${CMAKE_SOURCE_DIR})
 
