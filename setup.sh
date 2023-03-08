@@ -7,7 +7,7 @@ GITHEMEFBND="build"
 cd $GITHEMEF/ && rm -rf .git
 
 if [ -d "${GITHEMEFT}/extra" ]; then
-    rm -rf "${GITHEMEF}/extra"   
+    cd ${GITHEMEF} && rm -rf extra   
 fi
 
 echo "Lutfen projenize bir isim girin: "
