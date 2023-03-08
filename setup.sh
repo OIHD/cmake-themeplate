@@ -30,7 +30,7 @@ for dosya in $GITHEMEFT/vscode/*; do
         sed -i "s/$GITHEMEFN/$DOSYAISMI/g" "$dosya"
     fi
 done
-sed -i 's/${GITHEMEFN}/${DOSYAISMI}/g' $GITHEMEFT/CMakeLists.txt
+echo "project\(${DOSYAISMI}\) $(cat ornek.txt)" > $GITHEMEFT/CMakeLists.txt
 
 if [ -d "$GITHEMEF/themeplate/vscode" ]; then
     cd $GITHEMEF/themeplate && mv vscode/ .vscode
