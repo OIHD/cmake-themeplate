@@ -5,44 +5,44 @@ GITHEMEFN="themeplate"
 GITHEMEFBN="buildthemeplate"
 GITHEMEFBND="build"
 echo "--------------------------------"
-cd $GITHEMEF/ && rm -rf .git
+cd ${GITHEMEF}/ && rm -rf .git
 
 if [ -d "${GITHEMEFT}/extra" ]; then
     cd ${GITHEMEFT} && rm -rf extra   
 fi
 
 echo "Lutfen projenize bir isim girin: "
-read DOSYAISMI
+read {DOSYAISMI}
 GITHEMEFBNN="${GITHEMEFBND}${DOSYAISMI}"
 DOSYAISMIANA="${DOSYAISMI}_Proje"
-echo "cmake-themeplate klasorunun ismi bu sekilde degistirilecek : $DOSYAISMI"
+echo "cmake-themeplate klasorunun ismi bu sekilde degistirilecek : ${DOSYAISMI}"
 
-if [ -d "$GITHEMEFT/build" ]; then
-    rm -rf "$GITHEMEFT/build"   
+if [ -d "${GITHEMEFT}/build" ]; then
+    rm -rf "${GITHEMEFT}/build"   
 fi
-if [ -d "$GITHEMEF/buildthemeplate" ]; then
-    rm -rf "$GITHEMEF/buildthemeplate"   
+if [ -d "${GITHEMEF}/buildthemeplate" ]; then
+    rm -rf "${GITHEMEF}/buildthemeplate"   
 fi
 
-cd $GITHEMEF && mkdir buildthemeplate
-cd $GITHEMEF/themeplate && mkdir build
+cd ${GITHEMEF} && mkdir buildthemeplate
+cd ${GITHEMEF}/themeplate && mkdir build
 
-for dosya in $GITHEMEFT/vscode/*; do
+for dosya in ${GITHEMEFT}/vscode/*; do
     if [ -f "$dosya" ]; then
-        sed -i "s/$GITHEMEFN/$DOSYAISMI/g" "$dosya"
+        sed -i "s/${GITHEMEFN}/${DOSYAISMI}/g" "$dosya"
     fi
 done
-echo "project(${DOSYAISMI}) $(cat $GITHEMEFT/CMakeLists.txt)" > $GITHEMEFT/CMakeLists.txt
+echo "project(${DOSYAISMI}) $(cat ${GITHEMEFT}/CMakeLists.txt)" > ${GITHEMEFT}/CMakeLists.txt
 
-if [ -d "$GITHEMEF/themeplate/vscode" ]; then
-    cd $GITHEMEF/themeplate && mv vscode/ .vscode
+if [ -d "${GITHEMEF}/themeplate/vscode" ]; then
+    cd ${GITHEMEF}/themeplate && mv vscode/ .vscode
 fi
 
-cd $GITHEMEF
-mv $GITHEMEFN $DOSYAISMI
-mv "$GITHEMEFBN" "$GITHEMEFBNN"
-cd $HOME && mv cmake-themeplate $DOSYAISMIANA
+cd ${GITHEMEF}
+mv ${GITHEMEFN} ${DOSYAISMI}
+mv "${GITHEMEFBN}" "${GITHEMEFBNN}"
+cd ${HOME} && mv cmake-themeplate ${DOSYAISMIANA}
 
 
 echo "${DOSYAISMI} isimli projenizin konumu ; ${HOME}/${DOSYAISMI}_Proje , vscodeden ${HOME}/${DOSYAISMI}_Proje/${DOSYAISMI} klasorunu open folder sekmesinden acmalisiniz "
-cd $HOME/${DOSYAISMIANA}/ && rm -rf README.md setup.sh
+cd ${HOME}/${DOSYAISMIANA}/ && rm -rf README.md setup.sh
